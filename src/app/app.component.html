@@ -1,0 +1,25 @@
+<div class="container">
+
+  <h1 class="title is-1">Ashleel App </h1>
+
+<div class="columns is-centered">
+  <div class="card">
+    <div class="card-content">
+
+      <div class="content">
+        <h2>Browse Gandde Images In HD?</h2>
+     
+        <input class="input" #titleInput  type="text" placeholder="Angrezi me type kar">
+      
+      </div>
+      <button type="submit"  class="button" (click)="generateImage(titleInput.value)">Dekhle</button>
+
+      <figure *ngFor="let f of imageUrl"  class="image is-512x512">
+
+        <img class="add-pad" *ngFor="let q of f" [src]="q">
+      </figure>
+    </div>
+  </div>
+ 
+</div>
+</div>
